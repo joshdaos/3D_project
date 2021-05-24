@@ -23,6 +23,8 @@ camera.position.setZ(30);
 
 renderer.render( scene, camera );
 
+
+// Rotating Donut
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100)
 const material = new THREE.MeshStandardMaterial( {color: 0xFF6347} );
 const torus = new THREE.Mesh( geometry, material ); 
@@ -55,7 +57,7 @@ function addStar() {
 
 }
 
-Array(200).fill().forEach(addStar);
+Array(300).fill().forEach(addStar);
 
 // Space Background
 
@@ -134,3 +136,23 @@ function moveCamera() {
 
 document.body.onscroll = moveCamera
 moveCamera()
+
+
+
+// Earth
+const earthTexture = new THREE.TextureLoader().load('earth.jpg');
+const normal2Texture = new THREE.TextureLoader().load('normal2.jpg');
+
+const earth = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.MeshStandardMaterial( {
+    map: earthTexture,
+     normal2Map: normal2Texture,
+  })
+  
+);
+
+scene.add(earth);
+
+earth.position.z = 25;
+earth.position.setX(10);
