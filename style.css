@@ -6,7 +6,7 @@ canvas {
   left: 0;
 }
 
-/* main {
+main {
   position: absolute;
   color: white;
   z-index: 99;
@@ -89,4 +89,4 @@ canvas {
 
   .left {
     grid-column: 6 / 12;
-  } */
+  }
