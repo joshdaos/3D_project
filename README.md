@@ -1,3 +1,3 @@
-# 3 Dimensional Project
+# 3 Dimensional Portfolio Hub Project
 
-Currently deciding to either build a game or a Portfolio Hub
+Currently in progress, building a hub that holds my latest projects.
