@@ -1,3 +1,5 @@
-# 3 Dimensional Portfolio Hub Project
+# 3D Portfolio Hub Project
 
-Currently in progress, building a hub that holds my latest projects.
+Currently in progress
+
+- Utilizing three.js
